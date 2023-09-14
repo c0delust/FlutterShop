@@ -18,9 +18,6 @@ class ProductScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // Map<String, dynamic> data = product.data() as Map<String, dynamic>;
-    // print(data);
-
     final cartStream = ref.watch(userCartStream);
     bool isAddedInCart = false;
 
