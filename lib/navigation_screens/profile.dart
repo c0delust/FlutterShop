@@ -142,17 +142,9 @@ class ProfileScreen extends StatelessWidget {
               try {
                 Get.back();
 
-                // await FirebaseAuth.instance.signOut();
-                // await GoogleSignIn().signOut();
-
                 await FirebaseAuth.instance.currentUser!.delete();
-
                 await FirebaseAuth.instance.signOut();
                 await GoogleSignIn().signOut();
-
-                // Delete Firebase user
-                // User? currentUser = FirebaseAuth.instance.currentUser;
-                // await currentUser!.delete();
 
                 final prefs = await SharedPreferences.getInstance();
                 await prefs.clear();
@@ -161,12 +153,12 @@ class ProfileScreen extends StatelessWidget {
               } on FirebaseAuthException catch (e) {
                 print("FirebaseAuthException: " + e.toString());
 
-                ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                  content: Text('Log in again before deleting the account.'),
-                ));
-              } catch (e) {
-                print(e);
-              }
+                try {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                    content: Text('Log in again before deleting the account.'),
+                  ));
+                } catch (e) {}
+              } catch (e) {}
             },
             child: Text(
               'Delete',
@@ -179,56 +171,4 @@ class ProfileScreen extends StatelessWidget {
       ),
     );
   }
-
-  // deleteAccount(context) async {
-  //   showDialog(
-  //     context: context,
-  //     barrierDismissible: false,
-  //     builder: (context) => AlertDialog(
-  //       title: Text('Delete Account'),
-  //       content: Text('You are about to delete your Accout! Are you sure?'),
-  //       actions: [
-  //         ElevatedButton(
-  //           onPressed: () {
-  //             Get.back();
-  //           },
-  //           child: Text('Cancel'),
-  //         ),
-  //         ElevatedButton(
-  //           style: ElevatedButton.styleFrom(
-  //             backgroundColor: Color.fromARGB(255, 204, 88, 90),
-  //           ),
-  //           onPressed: () async {
-  //             try {
-  //               Get.back();
-  //               User? currentUser = firebaseAuth.currentUser;
-  //               currentUser!.delete();
-
-  //               final prefs = await SharedPreferences.getInstance();
-  //               await prefs.clear();
-
-  //               await FirebaseAuth.instance.currentUser!.delete();
-
-  //               Get.offAll(() => LoginScreen());
-  //             } on FirebaseAuthException catch (e) {
-  //               print("FirebaseAuthException: " + e.toString());
-
-  //               ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-  //                 content: Text('Log in again before deleting the account.'),
-  //               ));
-  //             } catch (e) {
-  //               print(e);
-  //             }
-  //           },
-  //           child: Text(
-  //             'Delete',
-  //             style: TextStyle(
-  //               color: Colors.white,
-  //             ),
-  //           ),
-  //         ),
-  //       ],
-  //     ),
-  //   );
-  // }
 }

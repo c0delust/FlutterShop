@@ -34,7 +34,7 @@ packages:
     source: hosted
     version: "2.1.1"
   cached_network_image:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: cached_network_image
       sha256: fd3d0dc1d451f9a252b32d95d3f0c3c487bc41a75eba2e6097cb0b9c71491b15
@@ -201,30 +201,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.7.0"
-  firebase_database:
-    dependency: "direct main"
-    description:
-      name: firebase_database
-      sha256: "61d4f75599382194e5a5617e606f61ea5fe092315c61976fab9d3bd7b291e23c"
-      url: "https://pub.dev"
-    source: hosted
-    version: "10.2.5"
-  firebase_database_platform_interface:
-    dependency: transitive
-    description:
-      name: firebase_database_platform_interface
-      sha256: "951738c448a01a9aca2b72b59bf9ebd769a59e49cbae8a5b376e9bdd0ccba3de"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.2.5+5"
-  firebase_database_web:
-    dependency: transitive
-    description:
-      name: firebase_database_web
-      sha256: fcbd0fc83cabd529b88723d6721d10d7a88d10480fd93904513e60e32c5016d1
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.2.3+5"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -384,14 +360,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.1"
-  money_formatter:
-    dependency: "direct main"
-    description:
-      name: money_formatter
-      sha256: "485ec13dced43238018108201a8229c531fd9270e6b2e601e42b4095dd9ac625"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.0.5"
   octo_image:
     dependency: transitive
     description:
