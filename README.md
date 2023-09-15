@@ -9,13 +9,13 @@ E-commerce Flutter app for Electronic Shopping.
 • State Management: Utilizes Riverpod for state management<br>
 • Navigation Management: Relies on Getx for navigation control<br><br>
 
-<img src="https://github.com/c0delust/fluttershop/assets/83002941/a21397b9-577a-4738-93a6-2219095ff0f0"  height="500"> &emsp;
-<img src="https://github.com/c0delust/fluttershop/assets/83002941/1a690ccf-6385-482f-80be-1caf23729637"  height="500"> &emsp;
-<img src="https://github.com/c0delust/fluttershop/assets/83002941/d20c852a-70b9-4fc2-ae2a-dbfcc0a3a091"  height="500"> &emsp;
-<img src="https://github.com/c0delust/fluttershop/assets/83002941/2cc3debd-be97-4e1b-8d6e-2fb7e7f3d457"  height="500"> &emsp;
-<img src="https://github.com/c0delust/fluttershop/assets/83002941/bde69884-c28c-460b-9efb-237e06f2e3dd"  height="500"> &emsp;
-<img src="https://github.com/c0delust/fluttershop/assets/83002941/e08d5a64-3edf-4c68-853b-8a7000d0e587"  height="500"> &emsp;
-<img src="https://github.com/c0delust/fluttershop/assets/83002941/ade0a284-ebac-43ab-820a-6b7618ea325b"  height="500"> &emsp; <br>
+<img src="https://github.com/c0delust/fluttershop/assets/83002941/82845bcb-8430-4c67-973c-db9ea7a8dd88"  height="500"> &emsp;
+<img src="https://github.com/c0delust/fluttershop/assets/83002941/12b397e5-5081-43d8-8635-9ef676faaddc"  height="500"> &emsp;
+<img src="https://github.com/c0delust/fluttershop/assets/83002941/61c9eebf-03ac-4449-933b-e75495ea11bf"  height="500"> &emsp;
+<img src="https://github.com/c0delust/fluttershop/assets/83002941/f2804a25-dd40-45e8-9caa-67bc777003e9"  height="500"> &emsp;
+<img src="https://github.com/c0delust/fluttershop/assets/83002941/054c7ceb-5034-46a1-8ab0-099aad16309c"  height="500"> &emsp;
+<img src="https://github.com/c0delust/fluttershop/assets/83002941/62b4640b-eb7b-4d1f-8a61-658e375cf4b7"  height="500"> &emsp;
+<img src="https://github.com/c0delust/fluttershop/assets/83002941/95943d28-9ae2-4906-81f9-eda225befe78"  height="500"> &emsp; <br>
 
 ### Dependencies:
 <ul>
